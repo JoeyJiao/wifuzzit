@@ -188,6 +188,8 @@ class session (pgraph.graph):
         self.logger.setLevel(log_level)
         formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] -> %(message)s')
 
+        self.log_level = log_level
+
         if logfile != None:
             filehandler = logging.FileHandler(logfile)
             filehandler.setLevel(logfile_level)
