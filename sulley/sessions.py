@@ -630,7 +630,7 @@ class session (pgraph.graph):
 
 
     ####################################################################################################################
-    #def log (self, msg, level=1):
+    def log (self, msg, level=1):
         '''
         If the supplied message falls under the current log level, print the specified message to screen.
 
@@ -638,8 +638,8 @@ class session (pgraph.graph):
         @param msg: Message to log
         '''
 #
-        #if self.log_level >= level:
-            #print "[%s] %s" % (time.strftime("%I:%M.%S"), msg)
+        if self.log_level >= level:
+            print "[%s] %s" % (time.strftime("%I:%M.%S"), msg)
 
 
     ####################################################################################################################
